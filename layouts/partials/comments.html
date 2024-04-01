@@ -6,12 +6,12 @@
 <style>
     .comments_details summary::marker {
         font-size: 20px;
-        content: '👉展开评论';
+        content: '👉Show comment';
         color: var(--content);
     }
     .comments_details[open] summary::marker{
         font-size: 20px;
-        content: '👇关闭评论';
+        content: '👇Close comment';
         color: var(--content);
     }
 </style>
@@ -28,9 +28,11 @@
     </script>
     <script>
         twikoo.init({
-            envId: {{ .Site.Params.twikoo.id }},
+             envId: {{ .Site.Params.twikoo.id }},
+            
+            // envId: "https://twikoo-api-green-one.vercel.app/",
         el: "#tcomment",
-            lang: 'zh-CN',
+            lang: 'en',
             region: {{ .Site.Params.twikoo.region }},
         path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
         })

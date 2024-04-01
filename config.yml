@@ -1,6 +1,6 @@
-baseURL: https://xyming108.github.io/ # 绑定的域名
-languageCode: zh-cn # en-us
-title: Sulv's Blog
+baseURL: https://yccyangchen.github.io/ # 绑定的域名
+languageCode: en
+title: Chen's Blog
 theme: hugo-PaperMod  # 主题名字，和themes文件夹下的一致
 
 enableInlineShortcodes: true
@@ -36,52 +36,55 @@ languages:
       weight: 1
       profileMode:
         enabled: true
-        title: (〃'▽'〃)
-        subtitle:
-        # subtitle: "🧨学而时习之，不亦说乎？有朋自远方来，不亦乐乎？<br/>👇联系方式"
-        imageUrl: "img/Q.gif"
+        title: Chen Yang
+        subtitle: Wish you were here
+        # imageUrl: "img/profile.jpg" #profile photo
         imageTitle:
         imageWidth: 150
         imageHeight: 150
         buttons:
-          - name: 🧱 建站
-            url: posts/blog
-          - name: 👨🏻‍💻 技术
-            url: posts/tech
-          - name: 📕 阅读
-            url: posts/read
-          - name: 🏖 生活
-            url: posts/life
+          - name: 🐰 About #技术
+            url: posts/blog # needs to change
+          - name: 🔥 Project
+            url: posts/tech # needs to change
+          - name: 📕 Resume
+            url: posts/read # needs to change
+          - name: ✨ Life
+            url: posts/life # needs to change
     menu:
       main:
         - identifier: search
-          name: 🔍 搜索
+          name: 🔍 search
           url: search
           weight: 1
         - identifier: home
-          name: 🏠 主页
+          name: 🏠 home
           url: /
           weight: 2
         - identifier: posts
-          name: 📚 文章
+          name: 📚 posts
           url: posts
           weight: 3
         - identifier: tags
-          name: 🧩 标签
-          url: tags
+          name: 🧩 tags
+          url: tags  
           weight: 15
         - identifier: archives
-          name: ⏱️ 时间轴
+          name: ⏱️ timeline
           url: archives/
           weight: 20
         - identifier: about
-          name: 🙋🏻‍♂️ 关于
+          name: 🙋‍♀️ about
           url: about
           weight: 50
-        - identifier: links
-          name: 🤝 友链
-          url: links
+        - identifier: album
+          name: 🖼️album
+          url: album
           weight: 60
+        - identifier: comment
+          name: 💭comment
+          url: comment
+          weight: 70
 
 outputs:
   home:
@@ -93,7 +96,7 @@ outputs:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: ""
-  author: Sulv
+  author: Chen
   # author: ["Me", "You"] # multiple authors
 
   defaultTheme: auto  # defaultTheme: light or  dark
@@ -119,39 +122,41 @@ params:
   comments: true
   socialIcons:
     - name: github
-      url: "https://github.com/xyming108"
-    - name: twitter
-      url: "img/twitter.png"
-    - name: facebook
-      url: "https://www.facebook.com/profile.php?id=100027782410997"
+      url: "https://github.com/yccyangchen"
+    # - name: twitter
+    #   url: "img/twitter.png"
+    # - name: facebook
+    #   url: "https://www.facebook.com/profile.php?id=100027782410997"
     - name: instagram
-      url: "img/instagram.png"
-    - name: QQ
-      url: "img/qq.png"
-    - name: WeChat
-      url: "img/wechat.png"
-    - name: bilibili
-      url: "https://space.bilibili.com/234461224"
+      url: "https://www.instagram.com/itssmeechen/"
+    # - name: QQ
+    #   url: "img/qq.png"
+    # - name: WeChat
+    #   url: "img/wechat.png"
+    # - name: bilibili
+    #   url: "https://space.bilibili.com/234461224"
     - name: email
-      url: "mailto:1931559710@qq.com"
-    - name: RSS
-      url: "index.xml"
+      url: "mailto:yccyangchen7@gmail.com"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/chen-yang-876154230/"
+    # - name: RSS
+    #   url: "index.xml"
 
   label: # 左上角图标
-    text: "Sulv's Blog"
-    icon: "img/Q.gif"
-    iconHeight: 35
+    text: "Chen's Blog"
+    #icon: "img/profile.jpg"
+    iconHeight: 50
 
   analytics:
     google:
       SiteVerificationTag: ""
 
   assets:
-    favicon: "img/Q.gif"
-    favicon16x16: "img/Q.gif"
-    favicon32x32: "img/Q.gif"
-    apple_touch_icon: "img/Q.gif"
-    safari_pinned_tab: "img/Q.gif"
+    favicon: "img/profile.jpg"
+    favicon16x16: "img/profile.jpg"
+    favicon32x32: "img/profile.jpg"
+    apple_touch_icon: "img/profile.jpg"
+    safari_pinned_tab: "img/profile.jpg"
     disableFingerprinting: true # 禁用指纹
 
   cover:
@@ -168,23 +173,23 @@ params:
     minMatchCharLength: 0
     keys: [ "title", "permalink", "summary" ]
 
-  StartYear: 2020 # 底部开始年份
-  FilingNo: 填写自己的备案号 # 底部备案号
-  PublicSecurityIconLink: 填自己的公安图标链接 # 填自己的公安图标链接,可用绝对路径，相对路径如 img/beian.png
-  PublicNetworkSecurity: 填自己的公网安备 # 底部公网安备号
+  # StartYear: 2020 # 底部开始年份
+  # FilingNo: XXX # 底部备案号 填写自己的备案号
+  # PublicSecurityIconLink: XXX # 填自己的公安图标链接,可用绝对路径，相对路径如 img/beian.png
+  # PublicNetworkSecurity: XXX # 底部公网安备号
 
   Reward: true #打赏是否开启
   # 打赏微信图片地址，
   # 可用绝对和相对地址，相对地址的图片需放在static/img下，
   # 填写格式为img/wechat_pay.png
-  WechatPay: img/wechat_pay.png
-  Alipay: img/alipay.png #打赏支付宝图片地址
+  # WechatPay: img/wechat_pay.png
+  # Alipay: img/alipay.png #打赏支付宝图片地址
 
   # twikoo评论
   twikoo:
-    version: 1.5.8 # 填写twikoo版本号
-    id:  # 填写自己的twikoo id
-    region:  # 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数，请看twikoo官方文档
+    version: 1.6.17 # 填写twikoo版本号
+    id:  "https://twikoo-api-green-one.vercel.app/" # 填写自己的twikoo id
+    region:  "none"# 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数，请看twikoo官方文档
 
 taxonomies:
   category: categories

@@ -1,5 +1,5 @@
 ---
-title: "🙋🏻‍♂️关于"
+title: "🙋‍♀️About"
 layout: about
 date: 2021-11-06T14:57:28+08:00
 hidemeta: true
@@ -22,10 +22,17 @@ cover:
 
 
 
-<p style="font-size: 25px;">关于我</p>
+<!-- <p style="font-size: 25px;">About me</p> -->
 
-|           |                    |
-| --------- | ------------------ |
-| 英文名:   | Kevin Xu              |
-| 职业:     | 程序员             |
-| 运动:     | 跑步、乒乓球、爬山 |
+
+```
+class Me:
+    def __init__(self):
+        self.name = "Chen Yang"
+        self.born_year = 1999
+        self.MBTI = "ESFP->ENFP"
+        self.hometown = "Xianju, Zhejiang, CN"
+        self.curr_location = "Darmstadt, Hessen, DE"
+        self.grad_school = "TU Darmstadt"
+        self.undergrad_school = "ZCMU"
+```

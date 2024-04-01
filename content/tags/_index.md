@@ -1,5 +1,5 @@
 ---
-title: "🧩 标签"
+title: "🧩 tags"
 layout: tags
 summary: tags
 ---
