@@ -1,4 +1,28 @@
 <<<<<<< HEAD
+- id: prev_page
+  translation: "Pag Prec"
+
+- id: next_page
+  translation: "Pag Succ"
+
+- id: read_time
+  translation:
+    one: "1 minuto"
+    other: "{{ .Count }} minuti"
+
+- id: toc
+  translation: "Tabella dei Contenuti"
+
+- id: translations
+  translation: "Traduzioni"
+
+- id: code_copy
+  translation: "copia"
+
+- id: code_copied
+  translation: "copiato!"
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 - id: prev_page
   translation: "Pag Prec"
@@ -70,3 +94,4 @@
 - id: code_copied
   translation: "copiato!"
 >>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441

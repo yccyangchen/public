@@ -1,4 +1,45 @@
 <<<<<<< HEAD
+<!-- {{- /* Comments area start */ -}}
+{{- /* to add comments read => https://gohugo.io/content-management/comments/ */ -}}
+{{- /* Comments area end */ -}}
+ -->
+
+<style>
+    .comments_details summary::marker {
+        font-size: 20px;
+        content: '👉Show comment';
+        color: var(--content);
+    }
+    .comments_details[open] summary::marker{
+        font-size: 20px;
+        content: '👇Close comment';
+        color: var(--content);
+    }
+</style>
+
+<!-- Twikoo -->
+<div>
+    <details class="comments_details">
+        <summary style="cursor: pointer; margin: 50px 0 20px 0;width: 130px;">
+            <span style="font-size: 20px;color: var(--content);">...</span>
+        </summary>
+        <div id="tcomment"></div>
+    </details>
+    <script src="https://cdn.staticfile.org/twikoo/{{ .Site.Params.twikoo.version }}/twikoo.all.min.js">
+    </script>
+    <script>
+        twikoo.init({
+             envId: {{ .Site.Params.twikoo.id }},
+            
+            // envId: "https://twikoo-api-green-one.vercel.app/",
+        el: "#tcomment",
+            lang: 'en',
+            region: {{ .Site.Params.twikoo.region }},
+        path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        })
+    </script>
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <!-- {{- /* Comments area start */ -}}
 {{- /* to add comments read => https://gohugo.io/content-management/comments/ */ -}}
@@ -121,4 +162,5 @@
         })
     </script>
 >>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441
 </div>

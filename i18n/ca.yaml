@@ -19,6 +19,27 @@
 - id: home
   translation: "Inici"
 =======
+<<<<<<< HEAD
+- id: prev_page
+  translation: "Pàgina anterior"
+
+- id: next_page
+  translation: "Pàgina següent"
+
+- id: read_time
+  translation:
+    one : "1 min"
+    other: "{{ .Count }} min"
+
+- id: toc
+  translation: "Taula de Continguts"
+
+- id: translations
+  translation: "Traduccions"
+
+- id: home
+  translation: "Inici"
+=======
 - id: prev_page
   translation: "Pàgina anterior"
 
@@ -58,3 +79,4 @@
 
 - id: home
   translation: "Inici"
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441

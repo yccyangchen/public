@@ -1,4 +1,31 @@
 <<<<<<< HEAD
+- id: prev_page
+  translation: "Trang trước"
+
+- id: next_page
+  translation: "Trang tiếp theo"
+
+- id: read_time
+  translation:
+    one : "1 phút"
+    other: "{{ .Count }} phút"
+
+- id: toc
+  translation: "Mục lục"
+
+- id: translations
+  translation: "Bản dịch"
+
+- id: home
+  translation: "Trang chủ"
+
+- id: code_copy
+  translation: "Sao chép"
+
+- id: code_copied
+  translation: "Đã sao chép!"
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 - id: prev_page
   translation: "Trang trước"
@@ -79,3 +106,4 @@
 - id: code_copied
   translation: "Đã sao chép!"
 >>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441

@@ -3,6 +3,11 @@ public
 .hugo_build.lock
 .idea
 =======
+<<<<<<< HEAD
+public
+.hugo_build.lock
+.idea
+=======
 public
 .hugo_build.lock
 .idea
@@ -10,5 +15,6 @@ public
 .DS_Storepublic
 .hugo_build.lock
 .idea
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441
 .DS_Store
 img/HackthonVideo.mp4

@@ -1,4 +1,19 @@
 <<<<<<< HEAD
+{{- with $.Site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <section class="entry-content">
+        <p>{{ .Content | markdownify }}</p>
+    </section>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" $.Site.Params.socialIcons }}
+    </footer>
+</article>
+{{- end -}}
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 {{- with $.Site.Params.homeInfoParams }}
 <article class="first-entry home-info">
@@ -43,3 +58,4 @@
 </article>
 {{- end -}}
 >>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441

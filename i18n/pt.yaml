@@ -1,4 +1,22 @@
 <<<<<<< HEAD
+- id: prev_page
+  translation: "Página Anterior"
+
+- id: next_page
+  translation: "Próxima Página"
+
+- id: read_time
+  translation:
+    one: "1 minuto"
+    other: "{{ .Count }} minutos"
+
+- id: toc
+  translation: "Conteúdo"
+
+- id: translations
+  translation: "Traduções"
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 - id: prev_page
   translation: "Página Anterior"
@@ -52,3 +70,4 @@
 - id: translations
   translation: "Traduções"
 >>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441

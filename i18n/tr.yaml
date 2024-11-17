@@ -1,4 +1,31 @@
 <<<<<<< HEAD
+- id: prev_page
+  translation: "Önceki Sayfa"
+
+- id: next_page
+  translation: "Sonraki Sayfa"
+
+- id: read_time
+  translation:
+    one : "1 dk"
+    other: "{{ .Count }} dk"
+
+- id: toc
+  translation: "İçindekiler"
+
+- id: translations
+  translation: "Çeviriler"
+
+- id: home
+  translation: "Anasayfa"
+
+- id: code_copy
+  translation: "Kopyala"
+
+- id: code_copied
+  translation: "Kopyalandı!"
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 - id: prev_page
   translation: "Önceki Sayfa"
@@ -79,3 +106,4 @@
 - id: code_copied
   translation: "Kopyalandı!"
 >>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441

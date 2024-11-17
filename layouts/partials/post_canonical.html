@@ -1,4 +1,15 @@
 <<<<<<< HEAD
+{{ if and (.Params.canonicalURL) (.Params.ShowCanonicalLink ) -}}
+{{ $url := urls.Parse .Params.canonicalURL }}
+
+{{- if or .Params.author $.Site.Params.author (.Param "ShowReadingTime") (not .Date.IsZero) .IsTranslated (or .Params.editPost.URL .Site.Params.editPost.URL) }}&nbsp;|&nbsp;{{- end -}}
+<span>
+    {{- (.Site.Params.CanonicalLinkText | default .Params.CanonicalLinkText) | default "Originally published at" -}}
+    &nbsp;<a href="{{ trim .Params.canonicalURL " " }}" title="{{ trim .Params.canonicalURL " " }}" target="_blank" rel="noopener noreferrer">{{ $url.Host }}</a>
+</span>
+{{- end }}
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 {{ if and (.Params.canonicalURL) (.Params.ShowCanonicalLink ) -}}
 {{ $url := urls.Parse .Params.canonicalURL }}
@@ -31,3 +42,4 @@
 </span>
 {{- end }}
 >>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441

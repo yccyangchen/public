@@ -1,4 +1,34 @@
 <<<<<<< HEAD
+- id: prev_page
+  translation: "Poprzednia strona"
+
+- id: next_page
+  translation: "Następna strona"
+
+- id: read_time
+  translation:
+      one: "1 min"
+      other: "{{ .Count }} min"
+
+- id: toc
+  translation: "Spis treści"
+
+- id: translations
+  translation: "Tłumaczenia"
+
+- id: home
+  translation: "Strona Główna"
+
+- id: edit_post
+  translation: "Edytuj"
+
+- id: code_copy
+  translation: "Kopiuj"
+
+- id: code_copied
+  translation: "Skopiowano!"
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 - id: prev_page
   translation: "Poprzednia strona"
@@ -88,3 +118,4 @@
 - id: code_copied
   translation: "Skopiowano!"
 >>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441

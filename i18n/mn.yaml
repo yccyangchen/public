@@ -1,4 +1,31 @@
 <<<<<<< HEAD
+- id: prev_page
+  translation: "Ѳмнѳх"
+
+- id: next_page
+  translation: "Дараах"
+
+- id: read_time
+  translation:
+    one : "1 МИН"
+    other: "{{ .Count }} МИН"
+
+- id: toc
+  translation: "Агуулга"
+
+- id: translations
+  translation: "Орчуулга"
+
+- id: home
+  translation: "Нүүр"
+
+- id: code_copy
+  translation: "хуулах"
+
+- id: code_copied
+  translation: "хуулсан!"
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 - id: prev_page
   translation: "Ѳмнѳх"
@@ -79,3 +106,4 @@
 - id: code_copied
   translation: "хуулсан!"
 >>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441
