@@ -1,0 +1,59 @@
+<<<<<<< HEAD
+- id: prev_page
+  translation: "Forrige Side"
+
+- id: next_page
+  translation: "Næste Side"
+
+- id: read_time
+  translation:
+    one: "1 min"
+    other: "{{ .Count }} min"
+
+- id: toc
+  translation: "Indholdsfortegnelse"
+
+- id: translations
+  translation: "Oversættelser"
+
+- id: home
+  translation: "Start"
+
+- id: edit_post
+  translation: "Rediger"
+
+- id: code_copy
+  translation: "kopier"
+
+- id: code_copied
+  translation: "kopieret!"
+=======
+- id: prev_page
+  translation: "Forrige Side"
+
+- id: next_page
+  translation: "Næste Side"
+
+- id: read_time
+  translation:
+    one: "1 min"
+    other: "{{ .Count }} min"
+
+- id: toc
+  translation: "Indholdsfortegnelse"
+
+- id: translations
+  translation: "Oversættelser"
+
+- id: home
+  translation: "Start"
+
+- id: edit_post
+  translation: "Rediger"
+
+- id: code_copy
+  translation: "kopier"
+
+- id: code_copied
+  translation: "kopieret!"
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649

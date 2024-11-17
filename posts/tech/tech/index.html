@@ -7,8 +7,8 @@
 <meta name="robots" content="index, follow">
 <title>Tech | Chen&#39;s Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="科技代码">
-<meta name="author" content="Sulv">
+<meta name="description" content="University project">
+<meta name="author" content="Chen">
 <link rel="canonical" href="https://yccyangchen.github.io/posts/tech/tech/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.js" onload="hljs.initHighlightingOnLoad();"></script>
@@ -74,17 +74,17 @@ var _hmt = _hmt || [];
 })();
 </script>
 <meta property="og:title" content="Tech" />
-<meta property="og:description" content="科技代码" />
+<meta property="og:description" content="University project" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://yccyangchen.github.io/posts/tech/tech/" />
-<meta property="og:image" content="https://www.sulvblog.cn/posts/blog/how_to_write_a_blog/1.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-05-05T00:17:58+08:00" />
-<meta property="article:modified_time" content="2022-05-05T00:17:58+08:00" />
+<meta property="og:image" content="https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/images/device/image/Meta-Quest-2-Transparent.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-04-01T00:17:58+08:00" />
+<meta property="article:modified_time" content="2024-04-01T00:17:58+08:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.sulvblog.cn/posts/blog/how_to_write_a_blog/1.png" />
+<meta name="twitter:image" content="https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/images/device/image/Meta-Quest-2-Transparent.png" />
 <meta name="twitter:title" content="Tech"/>
-<meta name="twitter:description" content="科技代码"/>
+<meta name="twitter:description" content="University project"/>
 
 
 <script type="application/ld+json">
@@ -121,18 +121,18 @@ var _hmt = _hmt || [];
   "@type": "BlogPosting",
   "headline": "Tech",
   "name": "Tech",
-  "description": "科技代码",
+  "description": "University project",
   "keywords": [
     ""
   ],
-  "articleBody": "\u003cdiv\u003e 科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 科技代码 \u003c/div\u003e ",
-  "wordCount" : "210",
+  "articleBody": "\rBackground/Motivation I have attended the kickoff course of IVAR in 2022. It was the most interesting lecture I have ever attended. But I didn’t have any experience about unity at that time so I was thinking I could attend this course next year after I got some experience with unity. However, I still didn’t try to learn unity. So here I am. There are two purposes of taking this course:\nfollowing the course schedule sysmatically to finish a project find an interesting topic for my master thesis. The goal of the course is to create locomotion technique and implement interaction task in a parkour map in XR environment with meta quest.\nThe Idea After the first lecture every attendee was required to write a short motivation email to the tutor. Because the number of equiments is limited, the number of students who can attend this lecture is also limited.\nI was thinking about all the different sports I have tried before, such as bouldering, rowing, shooting. But later I decided to implement skateboarding experience. The reasons are as follows:\nthe people without skateboarding experience before can try to skateboard as well. people get no physical injuries I don’t need to do any change to parkour.\nProgress Learn one tutorial At the beginning of the class, everyone was offered a tutorial link, which could be relavent to our topic. I picked a tutorial about bouldering at the beginning. But later I switched to skateboarding so I could not use the experience from this tutorial.\nFirst Unity Project - Animal collecting coins Two month after first lecture I followed one tutorial on Youtube(Bird collect coins) to build my first unity project.\nRun the parkour/Set up VR Github link(parkour)\nTroubles I met following new bee problems at the very beginning of my project.\nMac can not load. It has to be windows system. The cabel of meta quest is short. How to fine tuning the rotation of the skateboard. What interaction movement can I think for t-shape task? The movement on the slope Code retrieves the horizontal input from the primary thumbstick and assigns this input to the variable steerAngle, which is used to control the rotation of the skateboard.\ndetermines how fast the skateboard rotates in response to the thumbstick input.\nfloat steerAngle = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).x; currentSkateboardAngle += steerAngle * Time.deltaTime * rotationSpeed; skateboard.rotation = Quaternion.identity; skateboard.Rotate(skateboard.right, slopeAngle, Space.World); skateboard.Rotate(skateboard.up, currentSkateboardAngle,Space.World); handle input from the right trigger button on a VR controller to simulate a sliding motion and calculate the slide velocity based on the magnitude of the offset vector divided by the time it took to move (Time.deltaTime). Slide velocity represents how fast the controller moved forward.\nif (rightTriggerValue \u003e 0.95f) { if (!isIndexTriggerDown) { isIndexTriggerDown = true; startPos = (OVRInput.GetLocalControllerPosition(rightController)); } offset = skateboard.forward.normalized * (OVRInput.GetLocalControllerPosition(rightController) - startPos).magnitude; Debug.DrawRay(startPos, offset, Color.red, 0.2f); // Use the slide velocity to adjust my game (skateboard movement) float slideVelocity = offset.magnitude / Time.deltaTime; Debug.Log(\"Slide Velocity\" + slideVelocity); //UpdateSkateboardMovement(slideVelocity); } else { if (isIndexTriggerDown) { isIndexTriggerDown = false; offset = Vector3.zero; } } manage the movement and friction of the object\n//this.transform.position = this.transform.position + (offset) * translationGain; float currentVelocity = movementRb.velocity.magnitude; movementRb.velocity = skateboard.forward * currentVelocity * (1 - GetFriction() * Time.deltaTime); // inscrease friction, speed down movementRb.AddForce(offset * movementSpeed); // Don't go through the ground anymore, using physics if (OVRInput.Get(OVRInput.Button.Four)) { if (parkourCounter.parkourStart) { this.transform.position = parkourCounter.currentRespawnPos; } } use button one and button to start and finish t-shape task, press button three and rotate our heads at the time to adjust the position of the t-shape\nprivate void UpdateInteractionTask() { if (OVRInput.Get(OVRInput.Button.One)) { if (!selectionTaskMeasure.isCountdown \u0026\u0026 selectionTaskMeasure.startAllowed) { // spawn new t-shape selectionTaskMeasure.isTaskStart = true; selectionTaskMeasure.StartOneTask(); } } if (OVRInput.Get(OVRInput.Button.Two)) { if(selectionTaskMeasure.doneAllowed) { // confirm and remove current t-shape selectionTaskMeasure.isTaskStart = false; selectionTaskMeasure.EndOneTask(); } } if (OVRInput.Get(OVRInput.Button.Three)) { if (oldHmdRot.HasValue) { // rotate t-shape selectionTaskMeasure.ChangeTShapeRotation(hmd.transform.rotation * Quaternion.Inverse(oldHmdRot.Value)); } oldHmdRot = hmd.transform.rotation; } else { oldHmdRot = null; } if (OVRInput.Get(OVRInput.Button.Four)) { if (oldHmdPos.HasValue) { // move t-shape selectionTaskMeasure.ChangeTShapePosition(hmd.transform.position - oldHmdPos.Value); } oldHmdPos = hmd.transform.position; } else { oldHmdPos = null; } } the skateboard aligns with the slope of the terrain below it by adjusting its position and rotation accordingly.\nfloat SlopeAlighment() { RaycastHit hit; // The skateboard slides on only streetLayer, other objects will be ignored. if (Physics.Raycast(hmd.transform.position, Vector3.down, out hit, Mathf.Infinity, streetLayer)) { //skateboard.up = hit.normal; // Aligns the skateboard with the street // change height of skateboard Vector3 position = skateboard.position; position.y = hit.point.y + this.skateboardHeightOffset; skateboard.position = position; return Vector3.SignedAngle(Vector3.up, hit.normal, Vector3.right); } return 0; } ",
+  "wordCount" : "757",
   "inLanguage": "en",
-  "image":"https://www.sulvblog.cn/posts/blog/how_to_write_a_blog/1.png","datePublished": "2022-05-05T00:17:58+08:00",
-  "dateModified": "2022-05-05T00:17:58+08:00",
+  "image":"https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/images/device/image/Meta-Quest-2-Transparent.png","datePublished": "2024-04-01T00:17:58+08:00",
+  "dateModified": "2024-04-01T00:17:58+08:00",
   "author":[{
     "@type": "Person",
-    "name": "Sulv"
+    "name": "Chen"
   }],
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -234,8 +234,13 @@ var _hmt = _hmt || [];
                 </a>
             </li>
             <li>
-                <a href="https://yccyangchen.github.io/links" title="🤝 links">
-                <span>🤝 links</span>
+                <a href="https://yccyangchen.github.io/album" title="🖼️album">
+                <span>🖼️album</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://yccyangchen.github.io/comment" title="💭comment">
+                <span>💭comment</span>
                 </a>
             </li>
         </ul>
@@ -258,7 +263,7 @@ var _hmt = _hmt || [];
                 Tech
             </h1>
             <div class="post-description">
-                科技代码
+                University project
             </div>
             <div class="post-meta">
 
@@ -279,7 +284,7 @@ var _hmt = _hmt || [];
 <span class="parent-post-meta">
     <span id="post_meta_style_1">
         <span class="fa fa-calendar-check-o"></span>
-        <span>2022-05-05
+        <span>2024-04-01
             &nbsp;&nbsp;
         </span>
     </span>
@@ -292,19 +297,19 @@ var _hmt = _hmt || [];
     
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
-        <span>210 Words
+        <span>757 Words
             &nbsp;&nbsp;
         </span>
     </span>
     <span id="post_meta_style_4">
         <span class="fa fa-clock-o"></span>
-        <span>1 Minutes
+        <span>2 Minutes
             &nbsp;&nbsp;
         </span>
     </span>
     <span id="post_meta_style_5">
         <span class="fa fa-user-o"></span>
-        <span>Sulv
+        <span>Chen
             &nbsp;&nbsp;
         </span>
     </span>
@@ -366,43 +371,250 @@ var _hmt = _hmt || [];
 
 </div>
         </header> 
-<figure class="entry-cover1"><img style="zoom:;" loading="lazy" src="https://www.sulvblog.cn/posts/blog/how_to_write_a_blog/1.png" alt="">
+<figure class="entry-cover1"><img style="zoom:;" loading="lazy" src="https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/images/device/image/Meta-Quest-2-Transparent.png" alt="">
     
-</figure>
-        <div class="post-content"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span>&gt;
-</span></span><span style="display:flex;"><span>    科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>    科技代码
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</figure><aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#backgroundmotivation" aria-label="Background/Motivation">Background/Motivation</a></li>
+                <li>
+                    <a href="#the-idea" aria-label="The Idea">The Idea</a></li>
+                <li>
+                    <a href="#progress" aria-label="Progress">Progress</a><ul>
+                        
+                <li>
+                    <a href="#learn-one-tutorial" aria-label="Learn one tutorial">Learn one tutorial</a></li>
+                <li>
+                    <a href="#first-unity-project---animal-collecting-coins" aria-label="First Unity Project - Animal collecting coins">First Unity Project - Animal collecting coins</a></li>
+                <li>
+                    <a href="#run-the-parkourset-up-vr" aria-label="Run the parkour/Set up VR">Run the parkour/Set up VR</a></li>
+                <li>
+                    <a href="#troubles" aria-label="Troubles">Troubles</a></li></ul>
+                </li>
+                <li>
+                    <a href="#code" aria-label="Code">Code</a>
+                </li>
+            </ul>
+        </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+        
+        activeElement = elements[0];
+        const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+        document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+    }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        if (elements) {
+            activeElement = Array.from(elements).find((element) => {
+                if ((getOffsetTop(element) - window.pageYOffset) > 0 &&
+                    (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                    return element;
+                }
+            }) || activeElement
+
+            elements.forEach(element => {
+                const id = encodeURI(element.getAttribute('id')).toLowerCase();
+                if (element === activeElement){
+                    document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+                } else {
+                    document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+                }
+            })
+        }
+    }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;
+    }
+</script>
+        <div class="post-content"><!-- this is test -->
+<!-- ![example image](/posts/tech/tech1/1.png) -->
+<!-- ![example image](https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/images/device/image/Meta-Quest-2-Transparent.png) -->
+<h1 id="backgroundmotivation">Background/Motivation<a hidden class="anchor" aria-hidden="true" href="#backgroundmotivation">#</a></h1>
+<p>I have attended the kickoff course of IVAR in 2022. It was the most interesting lecture I have ever attended. But I didn&rsquo;t have any experience about unity at that time so I was thinking I could attend this course next year after I got some experience with unity. However, I still didn&rsquo;t try to learn unity. So here I am. There are two purposes of taking this course:</p>
+<ol>
+<li>following the course schedule sysmatically to finish a project</li>
+<li>find an interesting topic for my master thesis.</li>
+</ol>
+<p>The goal of the course is to create locomotion technique and implement interaction task in a parkour map in XR environment with meta quest.</p>
+<h1 id="the-idea">The Idea<a hidden class="anchor" aria-hidden="true" href="#the-idea">#</a></h1>
+<p>After the first lecture every attendee was required to write a short motivation email to the tutor. Because the number of equiments is limited, the number of students who can attend this lecture is also limited.</p>
+<p>I was thinking about all the different sports I have tried before, such as bouldering, rowing, shooting. But later I decided to implement skateboarding experience. The reasons are as follows:</p>
+<ol>
+<li>the people without skateboarding experience before can try to skateboard as well.</li>
+<li>people get no physical injuries</li>
+</ol>
+<p>I don&rsquo;t need to do any change to parkour.</p>
+<h1 id="progress">Progress<a hidden class="anchor" aria-hidden="true" href="#progress">#</a></h1>
+<h2 id="learn-one-tutorial">Learn one tutorial<a hidden class="anchor" aria-hidden="true" href="#learn-one-tutorial">#</a></h2>
+<p>At the beginning of the class, everyone was offered a tutorial link, which could be relavent to our topic. I picked a tutorial about bouldering at the beginning. But later I switched to skateboarding so I could not use the experience from this tutorial.</p>
+<h2 id="first-unity-project---animal-collecting-coins">First Unity Project - Animal collecting coins<a hidden class="anchor" aria-hidden="true" href="#first-unity-project---animal-collecting-coins">#</a></h2>
+<p>Two month after first lecture I followed one tutorial on Youtube(<a href="https://www.youtube.com/watch?v=EZxdMyFbJcI&amp;list=PLZ1b66Z1KFKiGehDxoWXh3oHA24iT5ZCr">Bird collect coins</a>) to build my first unity project.</p>
+<h2 id="run-the-parkourset-up-vr">Run the parkour/Set up VR<a hidden class="anchor" aria-hidden="true" href="#run-the-parkourset-up-vr">#</a></h2>
+<p>Github link(<a href="https://github.com/wenjietseng/VR-locomotion-parkour/tree/main">parkour</a>)</p>
+<h2 id="troubles">Troubles<a hidden class="anchor" aria-hidden="true" href="#troubles">#</a></h2>
+<p>I met following new bee problems at the very beginning of my project.</p>
+<ul>
+<li>Mac can not load. It has to be windows system.</li>
+<li>The cabel of meta quest is short.</li>
+<li>How to fine tuning the rotation of the skateboard.</li>
+<li>What interaction movement can I think for t-shape task?</li>
+<li>The movement on the slope</li>
+</ul>
+<h1 id="code">Code<a hidden class="anchor" aria-hidden="true" href="#code">#</a></h1>
+<p>retrieves the horizontal input from the primary thumbstick and assigns this input to the variable steerAngle, which is used to control the rotation of the skateboard.</p>
+<p>determines how fast the skateboard rotates in response to the thumbstick input.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    float steerAngle = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).x;
+</span></span><span style="display:flex;"><span>        currentSkateboardAngle += steerAngle * Time.deltaTime * rotationSpeed;
+</span></span><span style="display:flex;"><span>        skateboard.rotation = Quaternion.identity;
+</span></span><span style="display:flex;"><span>        skateboard.Rotate(skateboard.right, slopeAngle, Space.World);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        skateboard.Rotate(skateboard.up, currentSkateboardAngle,Space.World);
+</span></span></code></pre></div><p>handle input from the right trigger button on a VR controller to simulate a sliding motion and calculate the slide velocity based on the magnitude of the offset vector divided by the time it took to move (Time.deltaTime). Slide velocity represents how fast the controller moved forward.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span> if (rightTriggerValue &gt; 0.95f)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            if (!isIndexTriggerDown)
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                isIndexTriggerDown = true;
+</span></span><span style="display:flex;"><span>                startPos = (OVRInput.GetLocalControllerPosition(rightController));
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            offset = skateboard.forward.normalized * (OVRInput.GetLocalControllerPosition(rightController) - startPos).magnitude;
+</span></span><span style="display:flex;"><span>            Debug.DrawRay(startPos, offset, Color.red, 0.2f);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            // Use the slide velocity to adjust my game (skateboard movement)
+</span></span><span style="display:flex;"><span>            float slideVelocity = offset.magnitude / Time.deltaTime;
+</span></span><span style="display:flex;"><span>            Debug.Log(&#34;Slide Velocity&#34; + slideVelocity);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            //UpdateSkateboardMovement(slideVelocity);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        else
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            if (isIndexTriggerDown)
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                isIndexTriggerDown = false;
+</span></span><span style="display:flex;"><span>                offset = Vector3.zero;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span></code></pre></div><p>manage the movement and friction of the object</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>//this.transform.position = this.transform.position + (offset) * translationGain;
+</span></span><span style="display:flex;"><span>        float currentVelocity = movementRb.velocity.magnitude;
+</span></span><span style="display:flex;"><span>        movementRb.velocity = skateboard.forward * currentVelocity * (1 - GetFriction() * Time.deltaTime); // inscrease friction, speed down
+</span></span><span style="display:flex;"><span>        movementRb.AddForce(offset * movementSpeed); // Don&#39;t go through the ground anymore, using physics
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        if (OVRInput.Get(OVRInput.Button.Four))
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            if (parkourCounter.parkourStart)
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                this.transform.position = parkourCounter.currentRespawnPos;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span></code></pre></div><p>use button one and button to start and finish t-shape task,
+press button three and rotate our heads at the time to adjust the position of the t-shape</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>private void UpdateInteractionTask()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        if (OVRInput.Get(OVRInput.Button.One))
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            if (!selectionTaskMeasure.isCountdown &amp;&amp; selectionTaskMeasure.startAllowed)
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                // spawn new t-shape
+</span></span><span style="display:flex;"><span>                selectionTaskMeasure.isTaskStart = true;
+</span></span><span style="display:flex;"><span>                selectionTaskMeasure.StartOneTask();
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        if (OVRInput.Get(OVRInput.Button.Two))
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            if(selectionTaskMeasure.doneAllowed) 
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                // confirm and remove current t-shape
+</span></span><span style="display:flex;"><span>                selectionTaskMeasure.isTaskStart = false;
+</span></span><span style="display:flex;"><span>                selectionTaskMeasure.EndOneTask();
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        if (OVRInput.Get(OVRInput.Button.Three))
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            if (oldHmdRot.HasValue)
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                // rotate t-shape
+</span></span><span style="display:flex;"><span>                selectionTaskMeasure.ChangeTShapeRotation(hmd.transform.rotation * Quaternion.Inverse(oldHmdRot.Value));
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            oldHmdRot = hmd.transform.rotation;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        else
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            oldHmdRot = null;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        if (OVRInput.Get(OVRInput.Button.Four))
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            if (oldHmdPos.HasValue)
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                // move t-shape
+</span></span><span style="display:flex;"><span>                selectionTaskMeasure.ChangeTShapePosition(hmd.transform.position - oldHmdPos.Value);
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            oldHmdPos = hmd.transform.position;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        else
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            oldHmdPos = null;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>the skateboard aligns with the slope of the terrain below it by adjusting its position and rotation accordingly.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span> float SlopeAlighment()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        RaycastHit hit;
+</span></span><span style="display:flex;"><span>        // The skateboard slides on only streetLayer, other objects will be ignored.
+</span></span><span style="display:flex;"><span>        if (Physics.Raycast(hmd.transform.position, Vector3.down, out hit, Mathf.Infinity, streetLayer))
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            //skateboard.up = hit.normal; // Aligns the skateboard with the street 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            // change height of skateboard
+</span></span><span style="display:flex;"><span>            Vector3 position = skateboard.position;
+</span></span><span style="display:flex;"><span>            position.y = hit.point.y + this.skateboardHeightOffset;
+</span></span><span style="display:flex;"><span>            skateboard.position = position;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            return Vector3.SignedAngle(Vector3.up, hit.normal, Vector3.right);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        return 0;
+</span></span><span style="display:flex;"><span>    }
 </span></span></code></pre></div>
 
         </div>
@@ -427,10 +639,10 @@ var _hmt = _hmt || [];
         <footer class="post-footer">
             
 <nav class="paginav">
-  <a class="prev" href="https://yccyangchen.github.io/posts/read/read/">
-    <span class="title">« Prev Page</span>
+  <a class="next" href="https://yccyangchen.github.io/posts/life/girlsnight/">
+    <span class="title">Next Page »</span>
     <br>
-    <span>Read</span>
+    <span>Girls&#39;s Night</span>
   </a>
 </nav>
 
@@ -479,7 +691,7 @@ var _hmt = _hmt || [];
     <span>
         Copyright
         &copy;
-        -2023
+        -2024
         <a href="https://yccyangchen.github.io/" style="color:#939393;">Chen&#39;s Blog</a>
         All Rights Reserved
     </span>

@@ -1,0 +1,35 @@
+<<<<<<< HEAD
+- id: prev_page
+  translation: "Предишна страница"
+
+- id: next_page
+  translation: "Следваща страница"
+
+- id: read_time
+  translation:
+    one : "1 мин"
+    other: "{{ .Count }} мин"
+
+- id: toc
+  translation: "Съдържание"
+
+- id: translations
+  translation: "Преводи"
+=======
+- id: prev_page
+  translation: "Предишна страница"
+
+- id: next_page
+  translation: "Следваща страница"
+
+- id: read_time
+  translation:
+    one : "1 мин"
+    other: "{{ .Count }} мин"
+
+- id: toc
+  translation: "Съдържание"
+
+- id: translations
+  translation: "Преводи"
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649

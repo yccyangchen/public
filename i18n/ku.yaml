@@ -1,0 +1,53 @@
+<<<<<<< HEAD
+- id: prev_page
+  translation: "Rêpela Berê"
+
+- id: next_page
+  translation: "Rûpela Bê"
+
+- id: read_time
+  translation:
+    one : "1 xulek"
+    other: "{{ .Count }} xulek"
+
+- id: toc
+  translation: "Pêrist"
+
+- id: translations
+  translation: "Wergêranan"
+
+- id: home
+  translation: "Xanî"
+
+- id: code_copy
+  translation: "Jê bigre"
+
+- id: code_copied
+  translation: "Hat jê girtin!"
+=======
+- id: prev_page
+  translation: "Rêpela Berê"
+
+- id: next_page
+  translation: "Rûpela Bê"
+
+- id: read_time
+  translation:
+    one : "1 xulek"
+    other: "{{ .Count }} xulek"
+
+- id: toc
+  translation: "Pêrist"
+
+- id: translations
+  translation: "Wergêranan"
+
+- id: home
+  translation: "Xanî"
+
+- id: code_copy
+  translation: "Jê bigre"
+
+- id: code_copied
+  translation: "Hat jê girtin!"
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649

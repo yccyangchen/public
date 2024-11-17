@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+- id: prev_page
+  translation: "이전 페이지"
+
+- id: next_page
+  translation: "다음 페이지"
+=======
+- id: prev_page
+  translation: "이전 페이지"
+
+- id: next_page
+  translation: "다음 페이지"
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649

@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+User-agent: *
+{{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
+Disallow:
+{{- else }}
+Disallow: /
+{{- end }}
+Sitemap: {{ "sitemap.xml" | absURL }}
+=======
+User-agent: *
+{{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
+Disallow:
+{{- else }}
+Disallow: /
+{{- end }}
+Sitemap: {{ "sitemap.xml" | absURL }}
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649

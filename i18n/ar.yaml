@@ -1,0 +1,47 @@
+<<<<<<< HEAD
+- id: prev_page
+  translation: "الصفحة السابقة"
+
+- id: next_page
+  translation: "الصفحة التالية"
+
+- id: read_time
+  translation:
+    one: "دقيقة واحدة"
+    two: "دقيقتان"
+    few: "بضع ثوان"
+    zero: "الآن"
+    other: "دقائق {{ .Count }}"
+
+- id: toc
+  translation: "فهرس المحتوى"
+
+- id: translations
+  translation: "ترجمات أخرى"
+  
+- id: home
+  translation: "الصفحة الرئيسية"
+=======
+- id: prev_page
+  translation: "الصفحة السابقة"
+
+- id: next_page
+  translation: "الصفحة التالية"
+
+- id: read_time
+  translation:
+    one: "دقيقة واحدة"
+    two: "دقيقتان"
+    few: "بضع ثوان"
+    zero: "الآن"
+    other: "دقائق {{ .Count }}"
+
+- id: toc
+  translation: "فهرس المحتوى"
+
+- id: translations
+  translation: "ترجمات أخرى"
+  
+- id: home
+  translation: "الصفحة الرئيسية"
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649

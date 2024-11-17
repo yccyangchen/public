@@ -6,7 +6,25 @@
     <description>Recent content on Chen&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 11 Aug 2023 00:20:10 +0200</lastBuildDate><atom:link href="https://yccyangchen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Apr 2024 00:17:58 +0800</lastBuildDate><atom:link href="https://yccyangchen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech</title>
+      <link>https://yccyangchen.github.io/posts/tech/tech/</link>
+      <pubDate>Mon, 01 Apr 2024 00:17:58 +0800</pubDate>
+      
+      <guid>https://yccyangchen.github.io/posts/tech/tech/</guid>
+      <description>University project</description>
+    </item>
+    
+    <item>
+      <title>🖼️Album</title>
+      <link>https://yccyangchen.github.io/album/</link>
+      <pubDate>Mon, 14 Aug 2023 15:15:53 +0800</pubDate>
+      
+      <guid>https://yccyangchen.github.io/album/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Girls&#39;s Night</title>
       <link>https://yccyangchen.github.io/posts/life/girlsnight/</link>
@@ -26,12 +44,12 @@
     </item>
     
     <item>
-      <title>Tech1</title>
+      <title>Redis scan命令学习</title>
       <link>https://yccyangchen.github.io/posts/tech/tech1/</link>
-      <pubDate>Tue, 21 Feb 2023 12:20:21 +0800</pubDate>
+      <pubDate>Wed, 30 Nov 2022 15:55:23 +0800</pubDate>
       
       <guid>https://yccyangchen.github.io/posts/tech/tech1/</guid>
-      <description></description>
+      <description>scan命令详解</description>
     </item>
     
     <item>
@@ -53,30 +71,12 @@
     </item>
     
     <item>
-      <title>Tech</title>
-      <link>https://yccyangchen.github.io/posts/tech/tech/</link>
-      <pubDate>Thu, 05 May 2022 00:17:58 +0800</pubDate>
-      
-      <guid>https://yccyangchen.github.io/posts/tech/tech/</guid>
-      <description>科技代码</description>
-    </item>
-    
-    <item>
-      <title>🤝Links</title>
-      <link>https://yccyangchen.github.io/links/</link>
-      <pubDate>Sat, 06 Nov 2021 15:15:53 +0800</pubDate>
-      
-      <guid>https://yccyangchen.github.io/links/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>🙋‍♀️About</title>
+      <title>🙋‍♀️About me</title>
       <link>https://yccyangchen.github.io/about/</link>
       <pubDate>Sat, 06 Nov 2021 14:57:28 +0800</pubDate>
       
       <guid>https://yccyangchen.github.io/about/</guid>
-      <description>class Me: def __init__(self): self.name = &amp;#34;Chen Yang&amp;#34; self.born_year = 1999 self.MBTI = &amp;#34;ESFP-&amp;gt;ENFP&amp;#34; self.hometown = &amp;#34;Xianju, Zhejiang, CN&amp;#34; self.curr_location = &amp;#34;Darmstadt, Hessen, DE&amp;#34; self.grad_school = &amp;#34;TU Darmstadt&amp;#34; self.undergrad_school = &amp;#34;ZCMU&amp;#34;</description>
+      <description>&lt;!DOCTYPE html&gt; Experience Cards</description>
     </item>
     
     
