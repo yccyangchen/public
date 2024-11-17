@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 - id: prev_page
   translation: "Halaman Sebelumnya"
 
@@ -14,3 +15,59 @@
 
 - id: translations
   translation: "Terjemahan"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- id: prev_page
+  translation: "Halaman Sebelumnya"
+
+- id: next_page
+  translation: "Halaman Selanjutnya"
+
+- id: read_time
+  translation:
+    one : "1 menit"
+    other: "{{ .Count }} menit"
+
+- id: toc
+  translation: "Daftar Isi"
+
+- id: translations
+  translation: "Terjemahan"
+=======
+- id: prev_page
+  translation: "Halaman Sebelumnya"
+
+- id: next_page
+  translation: "Halaman Selanjutnya"
+
+- id: read_time
+  translation:
+    one : "1 menit"
+    other: "{{ .Count }} menit"
+
+- id: toc
+  translation: "Daftar Isi"
+
+- id: translations
+  translation: "Terjemahan"
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+=======
+- id: prev_page
+  translation: "Halaman Sebelumnya"
+
+- id: next_page
+  translation: "Halaman Selanjutnya"
+
+- id: read_time
+  translation:
+    one : "1 menit"
+    other: "{{ .Count }} menit"
+
+- id: toc
+  translation: "Daftar Isi"
+
+- id: translations
+  translation: "Terjemahan"
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441

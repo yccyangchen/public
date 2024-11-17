@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 - id: prev_page
   translation: "Página anterior"
 
@@ -14,3 +15,59 @@
 
 - id: translations
   translation: "Traducciones"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- id: prev_page
+  translation: "Página anterior"
+
+- id: next_page
+  translation: "Página siguiente"
+
+- id: read_time
+  translation:
+    one : "1 min"
+    other: "{{ .Count }} min"
+
+- id: toc
+  translation: "Tabla de Contenidos"
+
+- id: translations
+  translation: "Traducciones"
+=======
+- id: prev_page
+  translation: "Página anterior"
+
+- id: next_page
+  translation: "Página siguiente"
+
+- id: read_time
+  translation:
+    one : "1 min"
+    other: "{{ .Count }} min"
+
+- id: toc
+  translation: "Tabla de Contenidos"
+
+- id: translations
+  translation: "Traducciones"
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+=======
+- id: prev_page
+  translation: "Página anterior"
+
+- id: next_page
+  translation: "Página siguiente"
+
+- id: read_time
+  translation:
+    one : "1 min"
+    other: "{{ .Count }} min"
+
+- id: toc
+  translation: "Tabla de Contenidos"
+
+- id: translations
+  translation: "Traducciones"
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441

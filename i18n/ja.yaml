@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 - id: prev_page
   translation: "前のページ"
 
@@ -14,3 +15,59 @@
 
 - id: translations
   translation: "言語"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- id: prev_page
+  translation: "前のページ"
+
+- id: next_page
+  translation: "次のページ"
+
+- id: read_time
+  translation:
+    one : "1 分"
+    other: "{{ .Count }} 分"
+
+- id: toc
+  translation: "目次"
+
+- id: translations
+  translation: "言語"
+=======
+- id: prev_page
+  translation: "前のページ"
+
+- id: next_page
+  translation: "次のページ"
+
+- id: read_time
+  translation:
+    one : "1 分"
+    other: "{{ .Count }} 分"
+
+- id: toc
+  translation: "目次"
+
+- id: translations
+  translation: "言語"
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+=======
+- id: prev_page
+  translation: "前のページ"
+
+- id: next_page
+  translation: "次のページ"
+
+- id: read_time
+  translation:
+    one : "1 分"
+    other: "{{ .Count }} 分"
+
+- id: toc
+  translation: "目次"
+
+- id: translations
+  translation: "言語"
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441

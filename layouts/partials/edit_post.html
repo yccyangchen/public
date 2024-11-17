@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {{- if or .Params.editPost.URL .Site.Params.editPost.URL -}}
 {{- $fileUrlPath := path.Join .File.Path }}
 
@@ -6,3 +7,35 @@
     {{- .Params.editPost.Text | default (.Site.Params.editPost.Text | default (i18n "edit_post" | default "Edit")) -}}
 </a>
 {{- end }}
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+{{- if or .Params.editPost.URL .Site.Params.editPost.URL -}}
+{{- $fileUrlPath := path.Join .File.Path }}
+
+{{- if or .Params.author $.Site.Params.author (.Param "ShowReadingTime") (not .Date.IsZero) .IsTranslated }}&nbsp;|&nbsp;{{- end -}}
+<a href="{{ .Params.editPost.URL | default .Site.Params.editPost.URL }}{{ if .Params.editPost.appendFilePath | default ( .Site.Params.editPost.appendFilePath | default false ) }}/{{ $fileUrlPath }}{{ end }}" rel="noopener noreferrer" target="_blank">
+    {{- .Params.editPost.Text | default (.Site.Params.editPost.Text | default (i18n "edit_post" | default "Edit")) -}}
+</a>
+{{- end }}
+=======
+{{- if or .Params.editPost.URL .Site.Params.editPost.URL -}}
+{{- $fileUrlPath := path.Join .File.Path }}
+
+{{- if or .Params.author $.Site.Params.author (.Param "ShowReadingTime") (not .Date.IsZero) .IsTranslated }}&nbsp;|&nbsp;{{- end -}}
+<a href="{{ .Params.editPost.URL | default .Site.Params.editPost.URL }}{{ if .Params.editPost.appendFilePath | default ( .Site.Params.editPost.appendFilePath | default false ) }}/{{ $fileUrlPath }}{{ end }}" rel="noopener noreferrer" target="_blank">
+    {{- .Params.editPost.Text | default (.Site.Params.editPost.Text | default (i18n "edit_post" | default "Edit")) -}}
+</a>
+{{- end }}
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+=======
+{{- if or .Params.editPost.URL .Site.Params.editPost.URL -}}
+{{- $fileUrlPath := path.Join .File.Path }}
+
+{{- if or .Params.author $.Site.Params.author (.Param "ShowReadingTime") (not .Date.IsZero) .IsTranslated }}&nbsp;|&nbsp;{{- end -}}
+<a href="{{ .Params.editPost.URL | default .Site.Params.editPost.URL }}{{ if .Params.editPost.appendFilePath | default ( .Site.Params.editPost.appendFilePath | default false ) }}/{{ $fileUrlPath }}{{ end }}" rel="noopener noreferrer" target="_blank">
+    {{- .Params.editPost.Text | default (.Site.Params.editPost.Text | default (i18n "edit_post" | default "Edit")) -}}
+</a>
+{{- end }}
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441

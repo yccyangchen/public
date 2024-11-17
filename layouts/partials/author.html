@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {{- if or .Params.author .Site.Params.author }}
 {{- $author := (.Params.author | default .Site.Params.author) }}
 {{- $author_type := (printf "%T" $author) }}
@@ -7,3 +8,38 @@
 {{- $author }}
 {{- end }}
 {{- end -}}
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+{{- if or .Params.author .Site.Params.author }}
+{{- $author := (.Params.author | default .Site.Params.author) }}
+{{- $author_type := (printf "%T" $author) }}
+{{- if (or (eq $author_type "[]string") (eq $author_type "[]interface {}")) }}
+{{- (delimit $author ", " ) }}
+{{- else }}
+{{- $author }}
+{{- end }}
+{{- end -}}
+=======
+{{- if or .Params.author .Site.Params.author }}
+{{- $author := (.Params.author | default .Site.Params.author) }}
+{{- $author_type := (printf "%T" $author) }}
+{{- if (or (eq $author_type "[]string") (eq $author_type "[]interface {}")) }}
+{{- (delimit $author ", " ) }}
+{{- else }}
+{{- $author }}
+{{- end }}
+{{- end -}}
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+=======
+{{- if or .Params.author .Site.Params.author }}
+{{- $author := (.Params.author | default .Site.Params.author) }}
+{{- $author_type := (printf "%T" $author) }}
+{{- if (or (eq $author_type "[]string") (eq $author_type "[]interface {}")) }}
+{{- (delimit $author ", " ) }}
+{{- else }}
+{{- $author }}
+{{- end }}
+{{- end -}}
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441

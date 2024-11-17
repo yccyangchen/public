@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 - id: prev_page
   translation: "पिछला पृष्ठ"
 
@@ -14,3 +15,59 @@
 
 - id: translations
   translation: "अनुवाद"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- id: prev_page
+  translation: "पिछला पृष्ठ"
+
+- id: next_page
+  translation: "अगला पृष्ठ"
+
+- id: read_time
+  translation:
+    one : "एक मिनट"
+    other: "{{ .Count }} मिनट"
+
+- id: toc
+  translation: "विषय - सूची"
+
+- id: translations
+  translation: "अनुवाद"
+=======
+- id: prev_page
+  translation: "पिछला पृष्ठ"
+
+- id: next_page
+  translation: "अगला पृष्ठ"
+
+- id: read_time
+  translation:
+    one : "एक मिनट"
+    other: "{{ .Count }} मिनट"
+
+- id: toc
+  translation: "विषय - सूची"
+
+- id: translations
+  translation: "अनुवाद"
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+=======
+- id: prev_page
+  translation: "पिछला पृष्ठ"
+
+- id: next_page
+  translation: "अगला पृष्ठ"
+
+- id: read_time
+  translation:
+    one : "एक मिनट"
+    other: "{{ .Count }} मिनट"
+
+- id: toc
+  translation: "विषय - सूची"
+
+- id: translations
+  translation: "अनुवाद"
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441

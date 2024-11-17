@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {{- $.Scratch.Add "index" slice -}}
 {{- range .Site.RegularPages -}}
 {{- if and (not .Params.searchHidden) (ne .Layout `archives`) (ne .Layout `search`) }}
@@ -5,3 +6,32 @@
 {{- end }}
 {{- end -}}
 {{- $.Scratch.Get "index" | jsonify -}}
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+{{- $.Scratch.Add "index" slice -}}
+{{- range .Site.RegularPages -}}
+{{- if and (not .Params.searchHidden) (ne .Layout `archives`) (ne .Layout `search`) }}
+{{- $.Scratch.Add "index" (dict "title" .Title "content" .Plain "permalink" .Permalink "summary" .Summary) -}}
+{{- end }}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}
+=======
+{{- $.Scratch.Add "index" slice -}}
+{{- range .Site.RegularPages -}}
+{{- if and (not .Params.searchHidden) (ne .Layout `archives`) (ne .Layout `search`) }}
+{{- $.Scratch.Add "index" (dict "title" .Title "content" .Plain "permalink" .Permalink "summary" .Summary) -}}
+{{- end }}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+=======
+{{- $.Scratch.Add "index" slice -}}
+{{- range .Site.RegularPages -}}
+{{- if and (not .Params.searchHidden) (ne .Layout `archives`) (ne .Layout `search`) }}
+{{- $.Scratch.Add "index" (dict "title" .Title "content" .Plain "permalink" .Permalink "summary" .Summary) -}}
+{{- end }}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
+>>>>>>> aa4d717e69289eb7cc1a29e924df561edb7df441
