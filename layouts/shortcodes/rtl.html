@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 {{ $.Scratch.Set "md" false }}
 
 {{ if .IsNamedParams }}
@@ -14,6 +15,23 @@
     {{ .Inner | markdownify }}
   {{ end }}
 </div>
+=======
+{{ $.Scratch.Set "md" false }}
+
+{{ if .IsNamedParams }}
+{{ $.Scratch.Set "md" (.Get "md") }}
+{{ else }}
+{{ $.Scratch.Set "md" (.Get 0) }}
+{{ end }}
+
+<div dir="rtl">
+  {{ if eq ($.Scratch.Get "md") false }}
+    {{ .Inner }}
+  {{ else }}
+    {{ .Inner | markdownify }}
+  {{ end }}
+</div>
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
 =======
 {{ $.Scratch.Set "md" false }}
 

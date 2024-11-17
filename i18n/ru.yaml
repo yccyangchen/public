@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 - id: prev_page
   translation: "Предыдущая"
 
@@ -21,6 +22,30 @@
   translation: "копировать"
 
 - id: code_copied
+=======
+- id: prev_page
+  translation: "Предыдущая"
+
+- id: next_page
+  translation: "Следующая"
+
+- id: read_time
+  translation: "{{ .Count }} мин"
+
+- id: toc
+  translation: "Оглавление"
+
+- id: translations
+  translation: "Переводы"
+
+- id: home
+  translation: "Главная"
+
+- id: code_copy
+  translation: "копировать"
+
+- id: code_copied
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
 =======
 - id: prev_page
   translation: "Предыдущая"

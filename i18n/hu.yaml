@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 - id: prev_page
   translation: "Előző oldal"
 
@@ -15,6 +16,24 @@
 
 - id: translations
   translation: "Fordítások"
+=======
+- id: prev_page
+  translation: "Előző oldal"
+
+- id: next_page
+  translation: "Következő oldal"
+
+- id: read_time
+  translation:
+    one: "1 perc"
+    other: "{{ .Count }} perc"
+
+- id: toc
+  translation: "Tartalomjegyzék"
+
+- id: translations
+  translation: "Fordítások"
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
 =======
 - id: prev_page
   translation: "Előző oldal"

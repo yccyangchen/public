@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @font-face {
     font-family: "MaShanZheng-Regular";
     src: url("/fonts/MaShanZheng-Regular.ttf") format("truetype");
@@ -8,6 +9,17 @@
     font-family: "NeverMindHand-Regular";
     src: url("/fonts/NeverMindHand-Regular.ttf") format("truetype");
 }
+=======
+@font-face {
+    font-family: "MaShanZheng-Regular";
+    src: url("/fonts/MaShanZheng-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NeverMindHand-Regular";
+    src: url("/fonts/NeverMindHand-Regular.ttf") format("truetype");
+}
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
 =======
 @font-face {
     font-family: "MaShanZheng-Regular";

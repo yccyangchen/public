@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 - id: prev_page
   translation: "صفحه قبلی"
 
@@ -26,6 +27,35 @@
   translation: "کپی"
 
 - id: code_copied
+=======
+- id: prev_page
+  translation: "صفحه قبلی"
+
+- id: next_page
+  translation: "صفحه بعدی"
+
+- id: read_time
+  translation:
+    one: "۱ دقیقه"
+    other: "{{ .Count }} دقیقه"
+
+- id: toc
+  translation: "فهرست مطالب"
+
+- id: translations
+  translation: "ترجمه ها"
+
+- id: home
+  translation: "خانه"
+
+- id: edit_post
+  translation: "ویرایش"
+
+- id: code_copy
+  translation: "کپی"
+
+- id: code_copied
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
 =======
 - id: prev_page
   translation: "صفحه قبلی"

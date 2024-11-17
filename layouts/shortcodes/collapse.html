@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 {{ if .Get "summary" }}
 {{ else }}
 {{ warnf "missing value for param 'summary': %s" .Position }}
@@ -7,6 +8,16 @@
   <summary markdown="span">{{ .Get "summary" | markdownify }}</summary>
   {{ .Inner | markdownify }}
 </details></p>
+=======
+{{ if .Get "summary" }}
+{{ else }}
+{{ warnf "missing value for param 'summary': %s" .Position }}
+{{ end }}
+<p><details {{ if (eq (.Get "openByDefault") true) }} open=true {{ end }}>
+  <summary markdown="span">{{ .Get "summary" | markdownify }}</summary>
+  {{ .Inner | markdownify }}
+</details></p>
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
 =======
 {{ if .Get "summary" }}
 {{ else }}

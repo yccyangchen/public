@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 {{- if .IsTranslated -}}
 {{- if (ne .Layout "search") }}
 {{- if or .Params.author $.Site.Params.author (.Param "ShowReadingTime") (not .Date.IsZero) }}&nbsp;|&nbsp;{{- end -}}
@@ -18,6 +19,27 @@
     {{- end }}
 </ul>
 {{- end -}}
+=======
+{{- if .IsTranslated -}}
+{{- if (ne .Layout "search") }}
+{{- if or .Params.author $.Site.Params.author (.Param "ShowReadingTime") (not .Date.IsZero) }}&nbsp;|&nbsp;{{- end -}}
+{{- end }}
+<ul class="i18n_list">
+    {{- i18n "translations" | default "Translations" }}:
+    {{- range .Translations }}
+    <li>
+        <a href="{{ .Permalink }}">
+            {{- if (and $.Site.Params.displayFullLangName (.Language.LanguageName)) }}
+            {{- .Language.LanguageName | emojify -}}
+            {{- else }}
+            {{- .Lang | title -}}
+            {{- end -}}
+        </a>
+    </li>
+    {{- end }}
+</ul>
+{{- end -}}
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
 =======
 {{- if .IsTranslated -}}
 {{- if (ne .Layout "search") }}

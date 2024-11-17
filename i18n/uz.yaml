@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 - id: prev_page
   translation: "Oldingi sahifa"
 
@@ -19,6 +20,28 @@
 - id: home
   translation: "Bosh sahifa"
   
+=======
+- id: prev_page
+  translation: "Oldingi sahifa"
+
+- id: next_page
+  translation: "Keyingi sahifa"
+
+- id: read_time
+  translation:
+    one : "Bir daqiqa"
+    other: "{{ .Count }} daqiqa"
+
+- id: toc
+  translation: "Mundarija"
+
+- id: translations
+  translation: "Tarjimalar"
+
+- id: home
+  translation: "Bosh sahifa"
+  
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
 =======
 - id: prev_page
   translation: "Oldingi sahifa"

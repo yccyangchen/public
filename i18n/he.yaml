@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 - id: prev_page
   translation: "לעמוד הקודם"
 
@@ -18,6 +19,27 @@
 
 - id: home
   translation: "דף בית"
+=======
+- id: prev_page
+  translation: "לעמוד הקודם"
+
+- id: next_page
+  translation: "לעמוד הבא"
+
+- id: read_time
+  translation:
+    one : "דקה אחת"
+    other: "{{ .Count }} דקות"
+
+- id: toc
+  translation: "תוכן עניינים"
+
+- id: translations
+  translation: "תרגומים"
+
+- id: home
+  translation: "דף בית"
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
 =======
 - id: prev_page
   translation: "לעמוד הקודם"

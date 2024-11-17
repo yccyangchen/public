@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 - id: prev_page
   translation: "Vorherige Seite"
 
@@ -18,6 +19,27 @@
 
 - id: edit_post
   translation: "Bearbeiten"
+=======
+- id: prev_page
+  translation: "Vorherige Seite"
+
+- id: next_page
+  translation: "Nächste Seite"
+
+- id: read_time
+  translation:
+    one: "1 min"
+    other: "{{ .Count }} min"
+
+- id: toc
+  translation: "Inhaltsverzeichnis"
+
+- id: translations
+  translation: "Übersetzungen"
+
+- id: edit_post
+  translation: "Bearbeiten"
+>>>>>>> bdf96cda1f6d0f25a8b8fd0246783d7c12859649
 =======
 - id: prev_page
   translation: "Vorherige Seite"
